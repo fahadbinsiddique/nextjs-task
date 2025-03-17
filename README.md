@@ -1,37 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Developer Challenge - React/Next.js
 
-## Getting Started
+This is a React/Next.js project that implements a dynamic form with input fields and select boxes. The form supports adding and removing fields, validation, and state management.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Input field and select box placed side by side.
+- Form validation with error messages if fields are empty.
+- Dynamically add multiple input fields and select boxes.
+- Delete option to remove specific input/select pairs.
+- Form state is displayed in real-time below the form.
+- Submitted data is presented in a table format.
+
+## 🛠️ Technologies Used
+
+- **Next.js** (React Framework)
+- **React Hooks** (useState, useEffect)
+- **Tailwind CSS** (for styling)
+
+## 📌 Installation & Setup
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in browser**:
+   ```
+   http://localhost:3000
+   ```
+
+## 📂 Project Structure
+```
+your-project/
+├── src/
+│   ├── app/
+│   │   ├── aboutus/
+│   │   │   ├── page.jsx
+│   │   ├── blog/
+│   │   │   ├── page.jsx
+│   │   ├── review/
+│   │   │   ├── page.jsx
+│   │   ├── shop/
+│   │   │   ├── product/
+│   │   │   │   ├── page.jsx
+│   │   │   │   ├── loading.js
+│   │   │   ├── page.jsx
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── Navbar.jsx
+│   │   ├── about/
+│   │   │   ├── AboutHero.jsx
+│   │   ├── blog/
+│   │   │   ├── BlogHero.jsx
+│   │   ├── Home/
+│   │   │   ├── DynamicForm.jsx
+│   │   │   ├── HomeHero.jsx
+│   │   ├── review/
+│   │   │   ├── Review.jsx
+│   │   ├── shop/
+│   │   │   ├── Shop.jsx
+├── public/
+│   ├── favicon.ico
+├── styles/
+│   ├── globals.css
+├── .gitignore
+├── next.config.mjs
+├── package.json
+├── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Usage Guide
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Fill in the input fields and select a value from the dropdown.
+- Click the ➕ button to add more fields.
+- Click ❌ to remove unnecessary fields.
+- Submit the form to see the data displayed in a table.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
+This project is licensed under the MIT License.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+**💡 Need help?** Open an issue or reach out! 😊
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# nextjs-task
